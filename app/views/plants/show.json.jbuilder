@@ -1,0 +1,1 @@
+json.extract! @plant, :id, :scientific_name, :common_name, :family, :category, :description, :foliage, :stems, :origin, :flowers, :care, :exposure, :water_needs, :height, :growth_rate, :notes, :created_at, :updated_at

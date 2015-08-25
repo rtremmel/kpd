@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  scientific_name: MyString
+  common_name: MyString
+  family: MyString
+  category: MyString
+  description: MyString
+  foliage: MyString
+  stems: MyString
+  origin: MyString
+  flowers: MyString
+  care: MyString
+  exposure: MyString
+  water_needs: MyString
+  height: MyString
+  growth_rate: MyString
+  notes: MyString
+
+two:
+  scientific_name: MyString
+  common_name: MyString
+  family: MyString
+  category: MyString
+  description: MyString
+  foliage: MyString
+  stems: MyString
+  origin: MyString
+  flowers: MyString
+  care: MyString
+  exposure: MyString
+  water_needs: MyString
+  height: MyString
+  growth_rate: MyString
+  notes: MyString

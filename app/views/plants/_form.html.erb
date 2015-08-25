@@ -1,0 +1,77 @@
+<%= form_for(@plant) do |f| %>
+  <% if @plant.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@plant.errors.count, "error") %> prohibited this plant from being saved:</h2>
+
+      <ul>
+      <% @plant.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :scientific_name %><br>
+    <%= f.text_field :scientific_name %>
+  </div>
+  <div class="field">
+    <%= f.label :common_name %><br>
+    <%= f.text_field :common_name %>
+  </div>
+  <div class="field">
+    <%= f.label :family %><br>
+    <%= f.text_field :family %>
+  </div>
+  <div class="field">
+    <%= f.label :category %><br>
+    <%= f.text_field :category %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :foliage %><br>
+    <%= f.text_field :foliage %>
+  </div>
+  <div class="field">
+    <%= f.label :stems %><br>
+    <%= f.text_field :stems %>
+  </div>
+  <div class="field">
+    <%= f.label :origin %><br>
+    <%= f.text_field :origin %>
+  </div>
+  <div class="field">
+    <%= f.label :flowers %><br>
+    <%= f.text_field :flowers %>
+  </div>
+  <div class="field">
+    <%= f.label :care %><br>
+    <%= f.text_field :care %>
+  </div>
+  <div class="field">
+    <%= f.label :exposure %><br>
+    <%= f.text_field :exposure %>
+  </div>
+  <div class="field">
+    <%= f.label :water_needs %><br>
+    <%= f.text_field :water_needs %>
+  </div>
+  <div class="field">
+    <%= f.label :height %><br>
+    <%= f.text_field :height %>
+  </div>
+  <div class="field">
+    <%= f.label :growth_rate %><br>
+    <%= f.text_field :growth_rate %>
+  </div>
+  <div class="field">
+    <%= f.label :notes %><br>
+    <%= f.text_field :notes %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
